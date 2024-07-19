@@ -13,7 +13,7 @@ function TaskColumn({ label, color, tasks, setTasks }) {
         </h2>
         <div className="p2">
           {tasks.length
-            ? tasks.map((task) => <Task task={task} setTasks={setTasks} />)
+            ? tasks.map((task) => <Task task={task} setTasks={setTasks} key={task.id}/>)
             : " No tasks"}
         </div>
       </div>
